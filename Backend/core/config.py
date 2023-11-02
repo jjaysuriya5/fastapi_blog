@@ -2,7 +2,9 @@ import os
 from dotenv import load_dotenv
 
 script_dir = os.path.dirname(__file__)
+print('script_dir',script_dir)
 dotenv_path = os.path.join(script_dir, '../.env')
+print('dotenv_path',dotenv_path)
 load_dotenv(dotenv_path=dotenv_path)
 class Settings:
     PROJECT_TITLE: str = 'Suriyaa'
